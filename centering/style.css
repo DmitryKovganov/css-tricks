@@ -2,13 +2,12 @@
 	height: 300px;
 	width: 300px;
 	background: #555;
-	position: relative;	/* ! */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .parent div {
-	transform: translateY(-50%);	/* ! */
-	top: 50%;			/* ! */
 	background: #999;
 	color: white;
-	position: absolute;	/* ! */
 }
