@@ -3,7 +3,15 @@
 	margin: 0 auto;
 	padding: 10px;
 	background: #aaa;
-	overflow: auto;
+}
+
+.parent:after {
+	content: ""; 	/* "." in old browser? */
+	/*height: 0;*/ 	/* to remove content height */
+	display: block; /*element defaults to "inline", and cannot receive the "clear" property*/
+	clear: both;
+	/*visibility: hidden;*/ /* to hide content */
+	/*zoom: 1; */			/* for IE6-7 */
 }
 
 .child {
