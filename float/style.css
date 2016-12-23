@@ -16,3 +16,7 @@
 	height: 200px;
 	background-color: rgba(0,0,255,.7);
 }
+
+.clear {
+	clear: both;
+}
