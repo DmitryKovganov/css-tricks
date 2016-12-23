@@ -3,11 +3,13 @@
 	margin: 0 auto;
 	padding: 10px;
 	background: #aaa;
+	overflow: auto;
 }
 
 .child {
 	width: 100px;
 	height: 100px;
+	margin: 10px;
 	background: #abc;
 	float: right;
 }
