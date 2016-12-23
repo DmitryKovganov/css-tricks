@@ -1,0 +1,8 @@
+Double Margin Bug — Another thing to remember when dealing with IE 6 is that if you apply a margin in the same direction as the float, it will double the margin. 
+Quick fix: set display: inline on the float, and don't worry it will remain a block-level element.
+
+The 3px Jog is when text that is up next to a floated element is mysteriously kicked away by 3px like a weird forcefield around the float. 
+Quick fix: set a width or height on the affected text.
+
+In IE 7, the Bottom Margin Bug was when if a floated parent has floated children inside it, bottom margin on those children is ignored by the parent. 
+Quick fix: using bottom padding on the parent instead.
