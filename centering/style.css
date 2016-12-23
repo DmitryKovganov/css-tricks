@@ -1,5 +1,12 @@
 .parent {
-	background: #555;
 	height: 300px;
+	background: #555;
 	text-align: center;	/* ! */
+}
+
+.parent div {
+	max-width: 100px;
+	background: #999;
+	text-align: left;
+	display: inline-block;	/* ! */
 }
