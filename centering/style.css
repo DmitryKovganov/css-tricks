@@ -1,18 +1,23 @@
 .parent {
 	height: 300px;
 	width: 300px;
-	width: 60%;
+	margin: 0 auto;
 	background: #555;
-	margin: 0 auto;				/* ! */
-	position: relative;			/* ! */
+	text-align: center;		/* ! */
 }
 
-.parent div {
-	top: 50%;					/* ! */
-	left: 50%;					/* ! */
-	transform: translate(-50%, -50%);	/* ! */
+.parent:before {			/* ! */
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.child {
+	width: 120px;
 	padding: 20px;
 	background: #999;
 	color: white;
-	position: absolute;			/* ! */
+	display: inline-block;	/* ! */
+	vertical-align: middle;	/* ! */
 }
