@@ -6,8 +6,7 @@
 }
 
 .parent div {
-	height: 100px;
-	margin-top: -50px;	/* 0.5 height */
+	transform: translateY(-50%);	/* ! */
 	top: 50%;			/* ! */
 	background: #999;
 	color: white;
