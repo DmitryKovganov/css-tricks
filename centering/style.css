@@ -1,10 +1,12 @@
 .parent {
 	height: 300px;
 	background: #555;
-	padding: 50px 0;	/* ! */
 }
 
-.parent a {
+.parent div {
+	height: 100px;			/* ! */
+	width: 20%;
 	background: #999;
-	padding: 50px;	/* ! */
+	line-height: 100px;		/* ! */
+	white-space: nowrap;	/* ! */
 }
