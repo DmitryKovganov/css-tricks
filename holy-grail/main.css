@@ -6,11 +6,8 @@ body {
 
 #page-wrapper {
 	min-height: 100vh;
-	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: stretch;
-	justify-content: flex-start;
 }
 
 header,
@@ -22,9 +19,6 @@ footer {
 #content-wrapper {
 	flex: 1;
 	display: flex;
-	flex-direction: row;
-	align-items: stretch;
-	justify-content: flex-start;
 }
 
 main {
