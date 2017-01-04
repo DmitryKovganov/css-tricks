@@ -1,15 +1,14 @@
-/*** The Essential Code ***/
 body {
-	min-width: 630px;         /* 2 x (LC fullwidth + CC padding) + RC fullwidth */
 	margin: 0;
 	padding: 0;
-	background: #FFF;
+	min-width: 768px;
 }
 
 #container {
-	padding-left: 200px;      /* LC fullwidth */
-	padding-right: 190px;     /* RC fullwidth + CC padding */
-	min-height: calc(100vh - (40px + 40px));	/* header + footer heiht */
+	padding-left: 200px;      	/* LC fullwidth */
+	padding-right: 150px;     	/* RC fullwidth + CC padding */
+	min-height: calc(100vh - 80px);	/* header + footer heiht */
+	overflow: hidden;			/* Equal-height Columns */
 }
 
 #container .column {
@@ -17,39 +16,6 @@ body {
 	float: left;
 }
 
-main {
-	padding: 10px 20px;       /* CC padding */
-	width: 100%;
-}
-
-#sidebar-left {
-	width: 180px;             /* LC width */
-	padding: 0 10px;          /* LC padding */
-	right: 240px;             /* LC fullwidth + CC padding */
-	margin-left: -100%;
-}
-
-#sidebar-right {
-	width: 130px;             /* RC width */
-	padding: 0 10px;          /* RC padding */
-	margin-right: -100%;
-}
-
-footer {
-	clear: both;
-}
-
-/*** Equal-height Columns ***/
-#container {
-	overflow: hidden;
-}
-
-#container .column {
-	padding-bottom: 1001em;     /* X + padding-bottom */
-	margin-bottom: -1000em;     /* X */
-}
-
-/*** Just for Looks ***/
 header,
 footer {
 	height: 40px;
@@ -57,18 +23,24 @@ footer {
 }
 
 main {
+	width: 100%;
 	background: rgb(214,214,214);
 }
 
 #sidebar-left {
+	width: 200px;             	/* LC width */
+	right: 200px;             	/* LC fullwidth + CC padding */
+	margin-left: -100%;
 	background: rgb(119,187,221);
 }
 
 #sidebar-right {
+	width: 150px;             	/* RC width */
+	margin-right: -100%;
 	background: rgb(255,102,51);
 }
 
 #container .column {
-	padding-top: 1em;
-	text-align: justify;
+	padding-bottom: 10000px;	/* Equal-height Columns */
+	margin-bottom: -10000px;	/* Equal-height Columns */
 }
