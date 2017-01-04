@@ -1,0 +1,74 @@
+/*** The Essential Code ***/
+body {
+	min-width: 630px;         /* 2 x (LC fullwidth + CC padding) + RC fullwidth */
+	margin: 0;
+	padding: 0;
+	background: #FFF;
+}
+
+#container {
+	padding-left: 200px;      /* LC fullwidth */
+	padding-right: 190px;     /* RC fullwidth + CC padding */
+	min-height: calc(100vh - (40px + 40px));	/* header + footer heiht */
+}
+
+#container .column {
+	position: relative;
+	float: left;
+}
+
+main {
+	padding: 10px 20px;       /* CC padding */
+	width: 100%;
+}
+
+#sidebar-left {
+	width: 180px;             /* LC width */
+	padding: 0 10px;          /* LC padding */
+	right: 240px;             /* LC fullwidth + CC padding */
+	margin-left: -100%;
+}
+
+#sidebar-right {
+	width: 130px;             /* RC width */
+	padding: 0 10px;          /* RC padding */
+	margin-right: -100%;
+}
+
+footer {
+	clear: both;
+}
+
+/*** Equal-height Columns ***/
+#container {
+	overflow: hidden;
+}
+
+#container .column {
+	padding-bottom: 1001em;     /* X + padding-bottom */
+	margin-bottom: -1000em;     /* X */
+}
+
+/*** Just for Looks ***/
+header,
+footer {
+	height: 40px;
+	background: rgb(102,102,102);
+}
+
+main {
+	background: rgb(214,214,214);
+}
+
+#sidebar-left {
+	background: rgb(119,187,221);
+}
+
+#sidebar-right {
+	background: rgb(255,102,51);
+}
+
+#container .column {
+	padding-top: 1em;
+	text-align: justify;
+}
